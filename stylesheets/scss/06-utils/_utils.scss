@@ -1,0 +1,8 @@
+.br::after {
+    content: "\a";
+    white-space: pre;
+  }
+
+  .hidden {
+    display: none;
+  }
