@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
         <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+        <link rel="stylesheet" href="./stylesheets/css/style.css" />
 
         <!-- Primary Meta Tags -->
         <title>Frontend Mentor | Officelite coming soon site</title>
@@ -22,10 +23,7 @@
             property="og:description"
             content="This is a solution to the Maker pre-launch landing page challenge on Frontend Mentor."
         />
-        <meta
-            property="og:image"
-            content="https://miguelzaga.github.io/officelite-coming-soon-site/assets/meta-img.jpg"
-        />
+        <meta property="og:image" content="https://miguelzaga.github.io/officelite-coming-soon-site/assets/meta-img.jpg" />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
@@ -35,22 +33,89 @@
             property="twitter:description"
             content="This is a solution to the Maker pre-launch landing page challenge on Frontend Mentor."
         />
-        <meta
-            property="twitter:image"
-            content="./assets/meta-img.jpg"
-        />
+        <meta property="twitter:image" content="./assets/meta-img.jpg" />
     </head>
     <body>
-        A simple solution to complex tasks is coming soon Say goodbye to inefficient juggling of multiple apps, teams, and
-        projects. Officelite is the new collaboration platform built with an intuitive interface to improve productivity. Get
-        Started Basic Free Up to 5 users for free Basic document collaboration 2 gb storage Great security and support Try
-        for Free Pro $9.99 Per user, billed monthly All essential integrations 50 gb storage More control and insights Try
-        for Free Ultimate $19.99 Per user, billed monthly Robust work management 100 gb storage VIP support Try for Free
+        <header class="header">
+            <!-- logo -->
+        </header>
+        <main>
+            <section class="home-content">
+                <h1 class="home-content__title">A simple solution to complex tasks is coming soon</h1>
+                <p class="home-content__description">
+                    Say goodbye to inefficient juggling of multiple apps, teams, and projects. Officelite is the new
+                    collaboration platform built with an intuitive interface to improve productivity.
+                </p>
+                <a href="./sign-up.html" class="home-content__btn">Get Started</a>
+                <!-- <img src="" alt="" class="home-content__charts"> -->
+            </section>
+            <section class="pricing">
+                <article class="pricing__card">
+                    <h2 class="pricing__title">Basic</h2>
+                    <b class="pricing__price">Free</b>
+                    <p class="pricing__description">Up to 5 users for free</p>
+                    <ul class="pricing__list">
+                        <li class="pricing__list-li">Basic document collaboration</li>
+                        <li class="pricing__list-li">2 gb storage</li>
+                        <li class="pricing__list-li">Great security and support</li>
+                    </ul>
 
-        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-        Coming 4 Nov 2020
-
-        <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-        47 Days 07 Hours 56 Min 14 Sec Get Started
+                    <a href="./sign-up.html" class="pricing__btn">Try for Free</a>
+                </article>
+                <article class="pricing__card">
+                    <h2 class="pricing__title">Pro</h2>
+                    <b class="pricing__price">$9.99 </b>
+                    <p class="pricing__description">Per user, billed monthly</p>
+                    <ul class="pricing__list">
+                        <li class="pricing__list-li">All essential integrations</li>
+                        <li class="pricing__list-li">50 gb storage</li>
+                        <li class="pricing__list-li">More control and insights</li>
+                    </ul>
+                    <a href="./sign-up.html" class="pricing__btn">Try for Free</a>
+                </article>
+                <article class="pricing__card">
+                    <h2 class="pricing__title">Ultimate</h2>
+                    <b class="pricing__price">$19.99</b>
+                    <p class="pricing__description">Per user, billed monthly</p>
+                    <ul class="pricing__list">
+                        <li class="pricing__list-li">Robust work management</li>
+                        <li class="pricing__list-li">100 gb storage</li>
+                        <li class="pricing__list-li">VIP support</li>
+                    </ul>
+                    <a href="./sign-up.html" class="pricing__btn">Try for Free</a>
+                </article>
+            </section>
+            <div class="home-countdown">
+                <div class="countdown">
+                    <h3 class="countdown__title">
+                        <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
+                        Coming 4 Nov 2020
+                    </h3>
+                    <div class="countdown__container">
+                    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+                        <div class="countdown__card">
+                            <div class="countdown__number">47</div>
+                            <span class="countdown__date">Days</span>
+                        </div>
+                        <div class="countdown__card">
+                            <div class="countdown__number">07</div>
+                            <span class="countdown__date">Hours</span>
+                        </div>
+                        <div class="countdown__card">
+                            <div class="countdown__number">56</div>
+                            <span class="countdown__date">Min</span>
+                        </div>
+                        <div class="countdown__card">
+                            <div class="countdown__number">14</div>
+                            <span class="countdown__date">Sec</span>
+                        </div>
+                    </div>
+                    <a href="./sign-up.html" class="countdown__btn"></a>
+                </div>
+                <div class="home-countdown__bg">
+                    <!-- img -->
+                </div>
+            </div>
+        </main>
     </body>
 </html>

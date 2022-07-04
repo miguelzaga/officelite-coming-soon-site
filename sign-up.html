@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png" />
+        <link rel="stylesheet" href="./stylesheets/css/style.css" />
 
-    <title>Frontend Mentor | Officelite coming soon site</title>
-</head>
-<body>
-  Work smarter. Save time.
+        <!-- Primary Meta Tags -->
+        <title>Frontend Mentor | Officelite coming soon site</title>
+        <meta name="title" content="Frontend Mentor | Officelite coming soon site" />
+        <meta
+            name="description"
+            content="This is a solution to the Maker pre-launch landing page challenge on Frontend Mentor."
+        />
 
-  Easily manage your projects. Get on the list and receive in-app perks available only to 
-  early subscribers. We are moving into final development and getting ready for official launch soon.
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://miguelzaga.github.io/officelite-coming-soon-site/" />
+        <meta property="og:title" content="Frontend Mentor | Officelite coming soon site" />
+        <meta
+            property="og:description"
+            content="This is a solution to the Maker pre-launch landing page challenge on Frontend Mentor."
+        />
+        <meta property="og:image" content="https://miguelzaga.github.io/officelite-coming-soon-site/assets/meta-img.jpg" />
 
-  <!-- If you're choosing to make this date dynamic, set it to 30 days in the future from the moment the visitor views the page -->
-  Coming 4 Nov 2020
-
-  <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
-  47 Days
-  07 Hours
-  56 Min
-  14 Sec
-
-  Name
-  Email Address
-  Basic Pack Free
-  Basic Pack Free
-  Pro Pack $9.99
-  Ultimate Pack $19.99
-  Phone Number
-  Company
-  Get on the list
-</body>
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image" />
+        <meta property="twitter:url" content="https://miguelzaga.github.io/officelite-coming-soon-site/" />
+        <meta property="twitter:title" content="Frontend Mentor | Officelite coming soon site" />
+        <meta
+            property="twitter:description"
+            content="This is a solution to the Maker pre-launch landing page challenge on Frontend Mentor."
+        />
+        <meta property="twitter:image" content="./assets/meta-img.jpg" />
+    </head>
+    <body>
+        <header class="header">
+            <!-- logo -->
+        </header>
+        <main>
+            <section class="sign-content">
+                <h1 class="sign-content__title">Work smarter. Save time.</h1>
+                <p class="sign-content__description">
+                    Easily manage your projects. Get on the list and receive in-app perks available only to early
+                    subscribers. We are moving into final development and getting ready for official launch soon.
+                </p>
+                <div class="countdown__container">
+                    <!-- If you're choosing to make this timer dynamic, have it countdown from the date you set above -->
+                    <div class="countdown__card">
+                        <div class="countdown__number">47</div>
+                        <span class="countdown__date">Days</span>
+                    </div>
+                    <div class="countdown__card">
+                        <div class="countdown__number">07</div>
+                        <span class="countdown__date">Hours</span>
+                    </div>
+                    <div class="countdown__card">
+                        <div class="countdown__number">56</div>
+                        <span class="countdown__date">Min</span>
+                    </div>
+                    <div class="countdown__card">
+                        <div class="countdown__number">14</div>
+                        <span class="countdown__date">Sec</span>
+                    </div>
+                </div>
+            </section>
+            <form action="" class="form">
+              <div class="form__box"><label for="name" class="form__label"></label><input id="name" placeholder="Name" type="text" class="form__input"></div>
+              <div class="form__box"><label for="email" class="form__label"></label><input id="email" placeholder="Email" type="text" class="form__input"></div>
+              <div class="form__box"><label for="address" class="form__label"></label><input id="address" placeholder="Address" type="text" class="form__input"></div>
+              <div class="form__box"><label for="plan" class="form__label"></label>
+                <select class="form__select" name="plan" id="plan">
+                  <option class="form__select-option" value="free">Basic Pack Free</option>
+                  <option class="form__select-option" value="pro">Pro Pack $9.99</option>
+                  <option class="form__select-option" value="ultimate">Ultimate Pack $19.99</option>
+                </select>
+              <div class="form__box"><label for="phone-number" class="form__label"></label><input id="phone-number" placeholder="Phone Number" type="text" class="form__input"></div>
+              <div class="form__box"><label for="company" class="form__label"></label><input id="company" placeholder="Company" type="text" class="form__input"></div>
+              <button class="form__btn">Get on the list</button>
+            </form>
+            <div class="pattern-side">
+              <!-- img -->
+            </div>
+        </main>
+    </body>
 </html>
