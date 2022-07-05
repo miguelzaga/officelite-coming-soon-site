@@ -140,12 +140,14 @@ table {
   --bg-card-2: #5175ff;
   --bg-btn-1: #5175ff;
   --bg-btn-1--hover: #829cff;
-  --bg-btn-2: #ffffff;
-  --bg-btn-2--hover: #ffffff;
+  --bg-btn-2: #5175ff26;
+  --bg-btn-2--hover: #829cff40;
+  --bg-btn-3: #ffffff;
   --font-main-1: #333950;
   --font-main-2: #747b95;
   --font-light: #ffffff;
   --font-highlight: #5175ff;
+  --font-highlight--hover: #829cff;
   --font-error: #f05b5b;
 }
 
@@ -238,6 +240,62 @@ a,
   line-height: 48px;
   letter-spacing: 5px;
   text-transform: uppercase;
+}
+
+.button-1 {
+  display: block;
+  color: var(--font-light);
+  font-weight: 700;
+  border-radius: 28px;
+  text-align: center;
+  width: 100%;
+  max-width: 171px;
+  padding: 14px 0;
+  transition: 0.2s ease;
+  border: none;
+  cursor: pointer;
+  background-color: var(--bg-btn-1);
+}
+.button-1:hover {
+  background-color: var(--bg-btn-1--hover);
+}
+
+.button-2 {
+  display: block;
+  color: var(--font-light);
+  font-weight: 700;
+  border-radius: 28px;
+  text-align: center;
+  width: 100%;
+  max-width: 171px;
+  padding: 14px 0;
+  transition: 0.2s ease;
+  border: none;
+  cursor: pointer;
+  background-color: var(--bg-btn-2);
+  color: var(--font-highlight);
+}
+.button-2:hover {
+  background-color: var(--bg-btn-2--hover);
+}
+
+.button-3 {
+  display: block;
+  color: var(--font-light);
+  font-weight: 700;
+  border-radius: 28px;
+  text-align: center;
+  width: 100%;
+  max-width: 171px;
+  padding: 14px 0;
+  transition: 0.2s ease;
+  border: none;
+  cursor: pointer;
+  background-color: var(--bg-btn-3);
+  color: var(--font-highlight);
+}
+.button-3:hover {
+  color: var(--font-highlight--hover);
 }
 
 .br::after {

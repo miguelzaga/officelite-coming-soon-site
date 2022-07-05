@@ -1,1 +1,44 @@
 @use "../01-abstracts/" as a;
+
+@mixin base {
+    display: block;
+    color: var(--font-light);
+    font-weight: a.$font-bold;
+    border-radius: 28px;
+    text-align: center;
+    width: 100%;
+    max-width: 171px;
+    padding: 14px 0;
+    transition: 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.button-1 {
+    @include base();
+    background-color: var(--bg-btn-1);
+
+    &:hover {
+        background-color: var(--bg-btn-1--hover);
+    }
+}
+
+.button-2 {
+    @include base();
+    background-color: var(--bg-btn-2);
+    color: var(--font-highlight);
+
+    &:hover {
+        background-color: var(--bg-btn-2--hover);
+    }
+}
+
+.button-3 {
+    @include base();
+    background-color: var(--bg-btn-3);
+    color: var(--font-highlight);
+
+    &:hover {
+        color: var(--font-highlight--hover);
+    }
+}
