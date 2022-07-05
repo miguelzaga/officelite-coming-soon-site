@@ -2,5 +2,41 @@
 
 body {
     font-family: a.$font-family;
+    font-size: a.rem(16px);
+    line-height: 28px;
     font-weight: a.$font-regular;
+    color: var(--font-main-2);
+}
+
+a,
+.highlight {
+    color: var(--font-highlight);
+}
+
+.body-2 {
+    font-size: a.rem(18px);
+}
+
+.h1,
+.h2,
+.h3 {
+    color: var(--font-main-1);
+    font-weight: a.$font-bold;
+}
+
+.h1 {
+    font-size: a.rem(56px);
+    line-height: 64px;
+}
+
+.h2 {
+    font-size: a.rem(20px);
+    line-height: 28px;
+}
+
+.h3 {
+    font-size: a.rem(16px);
+    line-height: 48px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
 }

@@ -145,11 +145,16 @@ table {
   --font-main-1: #333950;
   --font-main-2: #747b95;
   --font-light: #ffffff;
+  --font-highlight: #5175ff;
   --font-error: #f05b5b;
 }
 
 body {
   background-color: var(--bg-main-1);
+}
+
+a {
+  text-decoration: none;
 }
 
 html {
@@ -196,7 +201,43 @@ h6 {
 
 body {
   font-family: "Kumbh Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 28px;
   font-weight: 400;
+  color: var(--font-main-2);
+}
+
+a,
+.highlight {
+  color: var(--font-highlight);
+}
+
+.body-2 {
+  font-size: 1.125rem;
+}
+
+.h1,
+.h2,
+.h3 {
+  color: var(--font-main-1);
+  font-weight: 700;
+}
+
+.h1 {
+  font-size: 3.5rem;
+  line-height: 64px;
+}
+
+.h2 {
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+
+.h3 {
+  font-size: 1rem;
+  line-height: 48px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
 }
 
 .br::after {
