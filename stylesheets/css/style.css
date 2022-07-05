@@ -149,6 +149,7 @@ table {
   --font-highlight: #5175ff;
   --font-highlight--hover: #829cff;
   --font-error: #f05b5b;
+  --border: #747b9580;
 }
 
 body {
@@ -209,11 +210,6 @@ body {
   color: var(--font-main-2);
 }
 
-a,
-.highlight {
-  color: var(--font-highlight);
-}
-
 .body-2 {
   font-size: 1.125rem;
 }
@@ -242,43 +238,8 @@ a,
   text-transform: uppercase;
 }
 
-.button-1 {
-  display: block;
-  color: var(--font-light);
-  font-weight: 700;
-  border-radius: 28px;
-  text-align: center;
-  width: 100%;
-  max-width: 171px;
-  padding: 14px 0;
-  transition: 0.2s ease;
-  border: none;
-  cursor: pointer;
-  background-color: var(--bg-btn-1);
-}
-.button-1:hover {
-  background-color: var(--bg-btn-1--hover);
-}
-
-.button-2 {
-  display: block;
-  color: var(--font-light);
-  font-weight: 700;
-  border-radius: 28px;
-  text-align: center;
-  width: 100%;
-  max-width: 171px;
-  padding: 14px 0;
-  transition: 0.2s ease;
-  border: none;
-  cursor: pointer;
-  background-color: var(--bg-btn-2);
-  color: var(--font-highlight);
-}
-.button-2:hover {
-  background-color: var(--bg-btn-2--hover);
-}
-
+.button-1,
+.button-2,
 .button-3 {
   display: block;
   color: var(--font-light);
@@ -291,11 +252,46 @@ a,
   transition: 0.2s ease;
   border: none;
   cursor: pointer;
+}
+
+.button-1 {
+  background-color: var(--bg-btn-1);
+}
+.button-1:hover {
+  background-color: var(--bg-btn-1--hover);
+}
+
+.button-2 {
+  background-color: var(--bg-btn-2);
+  color: var(--font-highlight);
+}
+.button-2:hover {
+  background-color: var(--bg-btn-2--hover);
+}
+
+.button-3 {
   background-color: var(--bg-btn-3);
   color: var(--font-highlight);
 }
 .button-3:hover {
   color: var(--font-highlight--hover);
+}
+
+.input,
+.select {
+  width: 100%;
+  padding: 0 0 17px 16px;
+  border: none;
+  border-bottom: var(--border) 1px solid;
+}
+
+.input::placeholder {
+  color: var(--font-main-2);
+}
+
+.select {
+  font-weight: 700;
+  color: var(--font-main-1);
 }
 
 .br::after {
@@ -305,6 +301,14 @@ a,
 
 .hidden {
   display: none;
+}
+
+.highlight {
+  color: var(--font-highlight);
+}
+
+.b {
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=style.css.map */

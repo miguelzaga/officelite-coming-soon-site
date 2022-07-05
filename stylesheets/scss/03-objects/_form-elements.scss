@@ -1,0 +1,20 @@
+@use "../01-abstracts/" as a;
+
+.input,
+.select {
+    width: 100%;
+    padding: 0 0 17px 16px;
+    border: none;
+    border-bottom: var(--border) 1px solid;
+}
+
+.input {
+    &::placeholder {
+        color: var(--font-main-2);
+    }
+}
+
+.select {
+    font-weight: a.$font-bold;
+    color: var(--font-main-1);
+}

@@ -1,8 +1,18 @@
+@use "./../01-abstracts/" as a;
+
 .br::after {
     content: "\a";
     white-space: pre;
-  }
+}
 
-  .hidden {
+.hidden {
     display: none;
-  }
+}
+
+.highlight {
+    color: var(--font-highlight);
+}
+
+.b {
+    font-weight: a.$font-bold;
+}

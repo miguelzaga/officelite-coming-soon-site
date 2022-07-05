@@ -1,6 +1,8 @@
 @use "../01-abstracts/" as a;
 
-@mixin base {
+.button-1,
+.button-2,
+.button-3 {
     display: block;
     color: var(--font-light);
     font-weight: a.$font-bold;
@@ -15,7 +17,6 @@
 }
 
 .button-1 {
-    @include base();
     background-color: var(--bg-btn-1);
 
     &:hover {
@@ -24,7 +25,6 @@
 }
 
 .button-2 {
-    @include base();
     background-color: var(--bg-btn-2);
     color: var(--font-highlight);
 
@@ -34,7 +34,6 @@
 }
 
 .button-3 {
-    @include base();
     background-color: var(--bg-btn-3);
     color: var(--font-highlight);
 
