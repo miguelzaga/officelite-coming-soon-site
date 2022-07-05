@@ -1,10 +1,23 @@
 // Colors
 :root {
-    --color-bg: #fff;
+    --bg-main-1: #fafafa;
+    --bg-main-2: #25293a;
+    --bg-card-1: #ffffff;
+    --bg-card-2: #5175ff;
+    --bg-btn-1: #5175ff;
+    --bg-btn-1--hover: #829cff;
+    --bg-btn-2: #ffffff;
+    --bg-btn-2--hover: #ffffff;
+    --font-main-1: #333950;
+    --font-main-2: #747b95;
+    --font-light: #ffffff;
+    --font-error: #f05b5b;
 }
 
 // Fonts
-$font: Arial, Helvetica, sans-serif;
+$font-family: "Kumbh Sans", sans-serif;
+$font-regular: 400;
+$font-bold: 700;
 
 // Breakpoints
 $sm: 320px;

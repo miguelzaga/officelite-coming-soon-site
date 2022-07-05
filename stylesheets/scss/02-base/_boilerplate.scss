@@ -8,7 +8,11 @@ html {
     box-sizing: inherit;
 }
 
-img {
+img,
+picture,
+video,
+canvas,
+svg {
     max-width: 100%;
     display: block;
     width: 100%;
@@ -17,4 +21,21 @@ img {
 
 svg {
     fill: currentColor;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
 }
