@@ -13,7 +13,11 @@ a {
 }
 
 .body-2 {
-    font-size: a.rem(18px);
+    font-size: a.rem(16px);
+
+    @include a.breakpoint(a.$lg){
+        font-size: a.rem(18px);
+    }
 }
 
 .h1,
@@ -24,8 +28,14 @@ a {
 }
 
 .h1 {
-    font-size: a.rem(56px);
-    line-height: 64px;
+
+    font-size: a.rem(40px);
+    line-height: 48px;
+
+    @include a.breakpoint(a.$lg){
+        font-size: a.rem(56px);
+        line-height: 64px;
+    }
 }
 
 .h2 {

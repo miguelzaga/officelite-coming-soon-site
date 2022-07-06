@@ -209,7 +209,12 @@ a {
 }
 
 .body-2 {
-  font-size: 1.125rem;
+  font-size: 1rem;
+}
+@media (min-width: 1024px) {
+  .body-2 {
+    font-size: 1.125rem;
+  }
 }
 
 .h1,
@@ -220,8 +225,14 @@ a {
 }
 
 .h1 {
-  font-size: 3.5rem;
-  line-height: 64px;
+  font-size: 2.5rem;
+  line-height: 48px;
+}
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 3.5rem;
+    line-height: 64px;
+  }
 }
 
 .h2 {
@@ -315,6 +326,33 @@ a {
   padding-right: 24px;
   position: relative;
   z-index: 1;
+}
+
+.home-content {
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+  margin-bottom: 100px;
+}
+.home-content__main {
+  max-width: 345px;
+}
+.home-content__title {
+  margin-bottom: 24px;
+}
+.home-content__description {
+  margin-bottom: 24px;
+}
+.home-content__btn {
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+}
+.home-content__charts {
+  width: 172px;
+  height: 192px;
 }
 
 .br::after {
