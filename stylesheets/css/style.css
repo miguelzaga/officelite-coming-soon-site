@@ -152,12 +152,10 @@ table {
   --border: #747b9580;
 }
 
+html,
 body {
   background-color: var(--bg-main-1);
-}
-
-a {
-  text-decoration: none;
+  overflow-x: hidden;
 }
 
 html {
@@ -170,11 +168,7 @@ html {
   box-sizing: inherit;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
+img {
   max-width: 100%;
   display: block;
   width: 100%;
@@ -208,6 +202,10 @@ body {
   line-height: 28px;
   font-weight: 400;
   color: var(--font-main-2);
+}
+
+a {
+  text-decoration: none;
 }
 
 .body-2 {
@@ -292,6 +290,31 @@ body {
 .select {
   font-weight: 700;
   color: var(--font-main-1);
+}
+
+.header {
+  position: relative;
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 80px;
+}
+.header__bg {
+  max-width: unset;
+  position: absolute;
+  width: 458px;
+  top: -216px;
+  left: calc((458px - 100%) / -2);
+  z-index: -1;
+}
+
+.wrapper {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1110px;
+  padding-left: 24px;
+  padding-right: 24px;
+  position: relative;
+  z-index: 1;
 }
 
 .br::after {

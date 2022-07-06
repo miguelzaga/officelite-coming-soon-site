@@ -1,1 +1,17 @@
 @use "../01-abstracts/" as a;
+
+.header {
+    position: relative;
+    text-align: center;
+    margin-top: 46px;
+    margin-bottom: 80px;
+
+    &__bg {
+        max-width: unset;
+        position: absolute;
+        width: 458px;
+        top: -216px;
+        left: calc((458px - 100%) / (-2));
+        z-index: -1;
+    }
+}

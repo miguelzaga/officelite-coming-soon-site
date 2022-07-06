@@ -8,6 +8,10 @@ body {
     color: var(--font-main-2);
 }
 
+a {
+    text-decoration: none;
+}
+
 .body-2 {
     font-size: a.rem(18px);
 }
