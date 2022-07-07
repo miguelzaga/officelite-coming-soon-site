@@ -15,24 +15,24 @@ a {
 .body-2 {
     font-size: a.rem(16px);
 
-    @include a.breakpoint(a.$lg){
+    @include a.breakpoint(a.$lg) {
         font-size: a.rem(18px);
     }
 }
 
 .h1,
 .h2,
-.h3 {
+.h3,
+.big {
     color: var(--font-main-1);
     font-weight: a.$font-bold;
 }
 
 .h1 {
-
     font-size: a.rem(40px);
     line-height: 48px;
 
-    @include a.breakpoint(a.$lg){
+    @include a.breakpoint(a.$lg) {
         font-size: a.rem(56px);
         line-height: 64px;
     }
@@ -48,4 +48,13 @@ a {
     line-height: 48px;
     letter-spacing: 5px;
     text-transform: uppercase;
+}
+
+.big {
+    font-size: a.rem(56px);
+    line-height: 64px;
+}
+
+.color-main {
+    color: var(--font-main-1);
 }

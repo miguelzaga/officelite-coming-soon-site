@@ -1,0 +1,7 @@
+@use "../01-abstracts/" as a;
+
+.card {
+    border-radius: 13px;
+    padding: 24px;
+    background-color: var(--bg-card-1);
+}

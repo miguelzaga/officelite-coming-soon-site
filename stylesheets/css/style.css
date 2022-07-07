@@ -219,7 +219,8 @@ a {
 
 .h1,
 .h2,
-.h3 {
+.h3,
+.big {
   color: var(--font-main-1);
   font-weight: 700;
 }
@@ -247,6 +248,15 @@ a {
   text-transform: uppercase;
 }
 
+.big {
+  font-size: 3.5rem;
+  line-height: 64px;
+}
+
+.color-main {
+  color: var(--font-main-1);
+}
+
 .button-1,
 .button-2,
 .button-3 {
@@ -257,6 +267,8 @@ a {
   text-align: center;
   width: 100%;
   max-width: 171px;
+  margin-left: auto;
+  margin-right: auto;
   padding: 14px 0;
   transition: 0.2s ease;
   border: none;
@@ -303,6 +315,12 @@ a {
   color: var(--font-main-1);
 }
 
+.card {
+  border-radius: 13px;
+  padding: 24px;
+  background-color: var(--bg-card-1);
+}
+
 .header {
   position: relative;
   text-align: center;
@@ -346,13 +364,54 @@ a {
   margin-bottom: 24px;
 }
 .home-content__btn {
-  margin-left: auto;
-  margin-right: auto;
   box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
 }
 .home-content__charts {
   width: 172px;
   height: 192px;
+}
+
+.pricing {
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px;
+  margin-bottom: 100px;
+}
+.pricing__card {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.pricing__title {
+  margin-bottom: 40px;
+}
+.pricing__price {
+  margin-bottom: 8px;
+}
+.pricing__description {
+  color: var(--font-main-1);
+  margin-bottom: 56px;
+}
+.pricing__list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+.pricing__card--alt {
+  position: relative;
+  background-color: var(--bg-card-2);
+  color: var(--font-light);
+}
+.pricing__card--alt .pricing__title, .pricing__card--alt .pricing__price .big, .pricing__card--alt .pricing__description {
+  color: var(--font-light);
+}
+.pricing__card--alt .pricing__bg {
+  max-width: unset;
+  position: absolute;
+  width: 880px;
+  top: -379px;
+  left: calc((880px - 100%) / -2);
 }
 
 .br::after {
