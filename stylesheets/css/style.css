@@ -143,6 +143,7 @@ table {
   --bg-btn-2: #5175ff26;
   --bg-btn-2--hover: #829cff40;
   --bg-btn-3: #ffffff;
+  --bg-coundown: #333950;
   --font-main-1: #333950;
   --font-main-2: #747b95;
   --font-light: #ffffff;
@@ -412,6 +413,39 @@ a {
   width: 880px;
   top: -379px;
   left: calc((880px - 100%) / -2);
+}
+
+.countdown {
+  max-width: 448px;
+  text-align: center;
+}
+.countdown__title {
+  margin-bottom: 18px;
+}
+.countdown__container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  gap: 13px;
+  margin-bottom: 40px;
+}
+.countdown__card {
+  background-color: var(--bg-coundown);
+  color: var(--font-light);
+  width: 72px;
+  height: 92px;
+  display: flex;
+  flex-flow: column nowrap;
+  padding-top: 16px;
+  border-radius: 4px;
+}
+.countdown__number {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.countdown__date {
+  font-size: 0.75rem;
+  opacity: 0.5;
 }
 
 .br::after {

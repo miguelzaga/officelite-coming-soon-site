@@ -1,0 +1,39 @@
+@use "./../01-abstracts/" as a;
+
+.countdown {
+  max-width: 448px;
+  text-align: center;
+
+  &__title {
+    margin-bottom: 18px;
+  }
+
+  &__container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 13px;
+    margin-bottom: 40px;
+  }
+
+  &__card {
+    background-color: var(--bg-coundown);
+    color: var(--font-light);
+    width: 72px;
+    height: 92px;
+    display: flex;
+    flex-flow: column nowrap;
+    padding-top: 16px;
+    border-radius: 4px;
+  }
+
+  &__number {
+    font-weight: a.$font-bold;
+    font-size: a.rem(32px);
+  }
+
+  &__date {
+    font-size: a.rem(12px);
+    opacity: 0.5;
+  }
+}
