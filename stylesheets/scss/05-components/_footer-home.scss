@@ -1,0 +1,22 @@
+@use "./../01-abstracts/" as a;
+
+.footer-home {
+  background-color: var(--bg-main-2);
+  height: 1248px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -2;
+  width: 100%;
+  overflow: hidden;
+
+  &__bg {
+    position: absolute;
+    z-index: -1;
+    width: 1202px;
+    max-width: unset;
+    top: 156px;
+    left: calc((1202px - 100%) / (-2));
+  }
+}

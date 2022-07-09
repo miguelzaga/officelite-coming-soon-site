@@ -1,11 +1,12 @@
 @use "../01-abstracts/" as a;
 
 .wrapper {
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1110px;
-    padding-left: 24px;
-    padding-right: 24px;
-    position: relative;
-    z-index: 1;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1110px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 100px;
+  position: relative;
+  z-index: 1;
 }

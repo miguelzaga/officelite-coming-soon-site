@@ -1,56 +1,57 @@
 @use "./../01-abstracts/" as a;
 
 .pricing {
-    text-align: center;
+  text-align: center;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 32px;
+  margin-bottom: 100px;
+
+  &__card {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+  }
+
+  &__price {
+    margin-bottom: 8px;
+  }
+
+  &__description {
+    color: var(--font-main-1);
+    margin-bottom: 56px;
+  }
+
+  &__list {
     display: flex;
     flex-flow: column nowrap;
-    gap: 32px;
-    margin-bottom: 100px;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
 
-    &__card {
-        padding-top: 40px;
-        padding-bottom: 40px;
-    }
+  &__card--alt {
+    position: relative;
+    background-color: var(--bg-card-2);
+    color: var(--font-light);
+    overflow: hidden;
 
-    &__title {
-        margin-bottom: 40px;
-    }
-
-    &__price {
-        margin-bottom: 8px;
-    }
-
-    &__description {
-        color: var(--font-main-1);
-        margin-bottom: 56px;
-    }
-
-    &__list {
-        display: flex;
-        flex-flow: column nowrap;
-        gap: 16px;
-        margin-bottom: 32px;
-    }
-
-    &__card--alt {
-        position: relative;
-        background-color: var(--bg-card-2);
+    & .pricing {
+      &__title,
+      &__price .big,
+      &__description {
         color: var(--font-light);
+      }
 
-        & .pricing {
-            &__title,
-            &__price .big,
-            &__description {
-                color: var(--font-light);
-            }
-
-            &__bg {
-                max-width: unset;
-                position: absolute;
-                width: 880px;
-                top: -379px;
-                left: calc((880px - 100%) / (-2));
-            }
-        }
+      &__bg {
+        max-width: unset;
+        position: absolute;
+        width: 880px;
+        top: -379px;
+        left: calc((880px - 100%) / (-2));
+      }
     }
+  }
 }
