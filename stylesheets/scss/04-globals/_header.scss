@@ -1,17 +1,31 @@
 @use "../01-abstracts/" as a;
 
 .header {
-    position: relative;
-    text-align: center;
-    margin-top: 46px;
-    margin-bottom: 80px;
+  position: relative;
+  text-align: center;
+  margin-top: 46px;
+  margin-bottom: 80px;
+
+  &__bg {
+    max-width: unset;
+    position: absolute;
+    width: 458px;
+    top: -216px;
+    left: calc((458px - 100%) / (-2));
+    z-index: -1;
+  }
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    margin-top: 72px;
+    margin-bottom: 104px;
+    text-align: left;
 
     &__bg {
-        max-width: unset;
-        position: absolute;
-        width: 458px;
-        top: -216px;
-        left: calc((458px - 100%) / (-2));
-        z-index: -1;
+      width: 666px;
+      top: -164px;
+      left: unset;
+      right: -293px;
     }
+  }
 }
