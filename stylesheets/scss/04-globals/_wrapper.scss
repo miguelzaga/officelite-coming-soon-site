@@ -4,9 +4,12 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 1110px;
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 100px;
+  padding: 46px 24px 100px;
   position: relative;
   z-index: 1;
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    padding: 72px 40px 100px 39px;
+  }
 }

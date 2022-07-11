@@ -3,7 +3,6 @@
 .header {
   position: relative;
   text-align: center;
-  margin-top: 46px;
   margin-bottom: 80px;
 
   &__bg {
@@ -17,15 +16,14 @@
 
   // Tablet
   @include a.breakpoint(a.$md) {
-    margin-top: 72px;
-    margin-bottom: 104px;
+    margin-bottom: calc(104px + 72px);
     text-align: left;
 
     &__bg {
       width: 666px;
       top: -164px;
       left: unset;
-      right: -293px;
+      right: calc(-293px - 40px);
     }
   }
 }

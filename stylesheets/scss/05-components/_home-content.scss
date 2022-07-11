@@ -1,31 +1,48 @@
 @use "./../01-abstracts/" as a;
 
 .home-content {
-    display: flex;
-    flex-flow: column-reverse nowrap;
-    align-items: center;
-    text-align: center;
-    gap: 64px;
-    margin-bottom: 100px;
+  display: flex;
+  flex-flow: column-reverse nowrap;
+  align-items: center;
+  text-align: center;
+  gap: 64px;
+  margin-bottom: 100px;
 
-    &__main {
-        max-width: 345px;
-    }
+  &__main {
+    max-width: 345px;
+  }
 
-    &__title {
-        margin-bottom: 24px;
-    }
+  &__title {
+    margin-bottom: 24px;
+  }
 
-    &__description {
-        margin-bottom: 24px;
-    }
+  &__description {
+    margin-bottom: 24px;
+  }
+
+  &__btn {
+    box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+  }
+
+  &__charts {
+    width: 172px;
+    height: 192px;
+  }
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    flex-direction: row;
+    text-align: left;
+    gap: 63px;
+    margin-bottom: 140px;
 
     &__btn {
-        box-shadow: 0px 25px 25px -10px rgba(63, 91, 194, 0.247159);
+      margin-left: 0;
     }
 
     &__charts {
-        width: 172px;
-        height: 192px;
+      width: 281px;
+      height: 314px;
     }
+  }
 }
