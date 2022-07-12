@@ -3,7 +3,6 @@
 .wrapper {
   margin-right: auto;
   margin-left: auto;
-  max-width: 1110px;
   padding: 46px 24px 100px;
   position: relative;
   z-index: 1;
@@ -11,5 +10,11 @@
   // Tablet
   @include a.breakpoint(a.$md) {
     padding: 72px 40px 100px 39px;
+  }
+
+  // Desktop
+  @include a.breakpoint(a.$lg) {
+    padding: 81px 40px 91px;
+    max-width: calc(1110px + (40px * 2));
   }
 }

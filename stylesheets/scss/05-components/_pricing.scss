@@ -73,6 +73,7 @@
     &__content {
       width: calc(400px - 48px);
       margin-bottom: 24px;
+      min-width: 50%;
     }
 
     &__title {
@@ -86,6 +87,7 @@
     &__list {
       margin-top: calc(92px - 48px);
       margin-bottom: 0;
+      min-width: 40%;
     }
 
     &__btn {
