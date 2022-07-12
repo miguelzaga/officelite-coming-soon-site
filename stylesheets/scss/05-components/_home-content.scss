@@ -3,6 +3,7 @@
 .home-content {
   display: flex;
   flex-flow: column-reverse nowrap;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   gap: 64px;
@@ -25,8 +26,8 @@
   }
 
   &__charts {
-    width: 172px;
-    height: 192px;
+    max-width: 172px;
+    max-height: 192px;
   }
 
   // Tablet
@@ -41,8 +42,26 @@
     }
 
     &__charts {
-      width: 281px;
-      height: 314px;
+      max-width: 281px;
+      max-height: 314px;
+    }
+  }
+
+  // Desktop
+  @include a.breakpoint(a.$lg) {
+    margin-bottom: 184px;
+
+    &__main {
+      max-width: 540px;
+    }
+
+    &__description {
+      margin-bottom: 32px;
+    }
+
+    &__charts {
+      max-width: 475px;
+      max-height: 531px;
     }
   }
 }
