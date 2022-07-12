@@ -412,6 +412,11 @@ a {
 .pricing__card {
   padding-top: 40px;
   padding-bottom: 40px;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.pricing__content {
+  margin-bottom: 56px;
 }
 .pricing__title {
   margin-bottom: 40px;
@@ -421,7 +426,6 @@ a {
 }
 .pricing__description {
   color: var(--font-main-1);
-  margin-bottom: 56px;
 }
 .pricing__list {
   display: flex;
@@ -444,6 +448,37 @@ a {
   width: 880px;
   top: -379px;
   left: calc((880px - 100%) / -2);
+}
+@media (min-width: 768px) {
+  .pricing {
+    text-align: left;
+    gap: 24px;
+  }
+  .pricing__card {
+    padding: 48px;
+    flex-flow: row wrap;
+  }
+  .pricing__content {
+    width: 352px;
+    margin-bottom: 24px;
+  }
+  .pricing__title {
+    margin-bottom: 16px;
+  }
+  .pricing__price {
+    margin-bottom: 4px;
+  }
+  .pricing__list {
+    margin-top: 44px;
+    margin-bottom: 0;
+  }
+  .pricing__btn {
+    margin-left: 0;
+  }
+  .pricing__card--alt .pricing__bg {
+    top: -282px;
+    left: -319px;
+  }
 }
 
 .countdown {

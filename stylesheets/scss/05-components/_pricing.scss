@@ -10,6 +10,12 @@
   &__card {
     padding-top: 40px;
     padding-bottom: 40px;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
+  &__content {
+    margin-bottom: 56px;
   }
 
   &__title {
@@ -22,7 +28,6 @@
 
   &__description {
     color: var(--font-main-1);
-    margin-bottom: 56px;
   }
 
   &__list {
@@ -51,6 +56,48 @@
         width: 880px;
         top: -379px;
         left: calc((880px - 100%) / (-2));
+      }
+    }
+  }
+
+  // Tablet
+  @include a.breakpoint(768px) {
+    text-align: left;
+    gap: 24px;
+
+    &__card {
+      padding: 48px;
+      flex-flow: row wrap;
+    }
+
+    &__content {
+      width: calc(400px - 48px);
+      margin-bottom: 24px;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__price {
+      margin-bottom: 4px;
+    }
+
+    &__list {
+      margin-top: calc(92px - 48px);
+      margin-bottom: 0;
+    }
+
+    &__btn {
+      margin-left: 0;
+    }
+
+    &__card--alt {
+      & .pricing {
+        &__bg {
+          top: -282px;
+          left: -319px;
+        }
       }
     }
   }
