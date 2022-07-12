@@ -143,7 +143,8 @@ table {
   --bg-btn-2: #5175ff26;
   --bg-btn-2--hover: #829cff40;
   --bg-btn-3: #ffffff;
-  --bg-coundown: #333950;
+  --bg-countdown: #333950;
+  --bg-countdown--alt: #5175ff1a;
   --font-main-1: #333950;
   --font-main-2: #747b95;
   --font-light: #ffffff;
@@ -569,7 +570,7 @@ a {
   margin-bottom: 40px;
 }
 .countdown__card {
-  background-color: var(--bg-coundown);
+  background-color: var(--bg-countdown);
   color: var(--font-light);
   width: 72px;
   height: 92px;
@@ -586,6 +587,7 @@ a {
 }
 .countdown__date {
   font-size: 0.75rem;
+  font-weight: 700;
   opacity: 0.5;
   text-transform: lowercase;
 }
@@ -629,6 +631,25 @@ a {
   }
 }
 
+.signup-countdown .countdown {
+  margin-bottom: 64px;
+}
+.signup-countdown .countdown__title {
+  color: var(--font-main-1);
+}
+.signup-countdown .countdown__container {
+  margin-bottom: 0;
+}
+.signup-countdown .countdown__card {
+  background-color: var(--bg-countdown--alt);
+}
+.signup-countdown .countdown__number {
+  color: var(--font-highlight);
+}
+.signup-countdown .countdown__date {
+  color: var(--font-main-1);
+}
+
 .footer-home {
   background-color: var(--bg-main-2);
   height: 1248px;
@@ -669,6 +690,17 @@ a {
     top: -614px;
     left: -702px;
   }
+}
+
+.sign-content {
+  text-align: center;
+}
+.sign-content__title {
+  margin-bottom: 16px;
+}
+.sign-content__description {
+  max-width: 573px;
+  margin: auto auto 64px;
 }
 
 .br::after {

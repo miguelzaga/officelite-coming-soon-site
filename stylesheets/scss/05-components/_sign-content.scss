@@ -1,0 +1,14 @@
+@use "./../01-abstracts/" as a;
+
+.sign-content {
+  text-align: center;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__description {
+    max-width: 573px;
+    margin: auto auto 64px;
+  }
+}

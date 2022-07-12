@@ -20,7 +20,7 @@
   }
 
   &__card {
-    background-color: var(--bg-coundown);
+    background-color: var(--bg-countdown);
     color: var(--font-light);
     width: 72px;
     height: 92px;
@@ -39,6 +39,7 @@
 
   &__date {
     font-size: a.rem(12px);
+    font-weight: a.$font-bold;
     opacity: 0.5;
     text-transform: lowercase;
   }
@@ -89,5 +90,30 @@
       text-align: left;
       margin-bottom: 0;
     }
+  }
+}
+
+// Signup Countdown
+.signup-countdown .countdown {
+  margin-bottom: 64px;
+
+  &__title {
+    color: var(--font-main-1);
+  }
+
+  &__container {
+    margin-bottom: 0;
+  }
+
+  &__card {
+    background-color: var(--bg-countdown--alt);
+  }
+
+  &__number {
+    color: var(--font-highlight);
+  }
+
+  &__date {
+    color: var(--font-main-1);
   }
 }
