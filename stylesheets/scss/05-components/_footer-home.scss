@@ -29,4 +29,18 @@
       left: calc((1454px - 100%) / (-2));
     }
   }
+
+  // Desktop
+  @include a.breakpoint(a.$lg) {
+    height: 603px;
+
+    &__bg {
+      width: 2036px;
+      top: 0;
+      left: 0;
+      top: -614px;
+      left: -702px;
+      //   left: calc((1454px - 100%) / (-2));
+    }
+  }
 }

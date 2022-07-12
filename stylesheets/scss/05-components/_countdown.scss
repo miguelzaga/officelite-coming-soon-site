@@ -81,6 +81,10 @@
     flex-direction: row;
     justify-content: space-between;
 
+    &__container {
+      margin-bottom: 0;
+    }
+
     &__title {
       text-align: left;
       margin-bottom: 0;

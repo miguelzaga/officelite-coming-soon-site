@@ -469,6 +469,7 @@ a {
   background-color: var(--bg-card-2);
   color: var(--font-light);
   overflow: hidden;
+  z-index: 1;
 }
 .pricing__card--alt .pricing__title, .pricing__card--alt .pricing__price .big, .pricing__card--alt .pricing__description {
   color: var(--font-light);
@@ -479,6 +480,7 @@ a {
   width: 880px;
   top: -379px;
   left: calc((880px - 100%) / -2);
+  z-index: -1;
 }
 @media (min-width: 768px) {
   .pricing {
@@ -618,6 +620,9 @@ a {
     flex-direction: row;
     justify-content: space-between;
   }
+  .countdown__container {
+    margin-bottom: 0;
+  }
   .countdown__title {
     text-align: left;
     margin-bottom: 0;
@@ -651,6 +656,18 @@ a {
     width: 1454px;
     top: 15px;
     left: calc((1454px - 100%) / -2);
+  }
+}
+@media (min-width: 1024px) {
+  .footer-home {
+    height: 603px;
+  }
+  .footer-home__bg {
+    width: 2036px;
+    top: 0;
+    left: 0;
+    top: -614px;
+    left: -702px;
   }
 }
 
