@@ -513,6 +513,41 @@ a {
     left: -319px;
   }
 }
+@media (min-width: 1024px) {
+  .pricing {
+    text-align: center;
+    gap: 30px;
+    flex-direction: row;
+    margin-bottom: 82px;
+  }
+  .pricing__card {
+    max-width: 350px;
+    padding: 40px;
+    flex-flow: column nowrap;
+    flex-grow: 1;
+  }
+  .pricing__content {
+    width: unset;
+    margin-bottom: 56px;
+  }
+  .pricing__title {
+    margin-bottom: 40px;
+  }
+  .pricing__price {
+    margin-bottom: 8px;
+  }
+  .pricing__list {
+    margin-top: 0;
+    margin-bottom: 32px;
+  }
+  .pricing__btn {
+    margin-left: auto;
+  }
+  .pricing__card--alt .pricing__bg {
+    top: -379px;
+    left: calc((880px - 100%) / -2);
+  }
+}
 
 .countdown {
   max-width: 448px;

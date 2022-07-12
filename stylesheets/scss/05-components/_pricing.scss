@@ -103,4 +103,51 @@
       }
     }
   }
+
+  // Desktop
+  @include a.breakpoint(a.$lg) {
+    text-align: center;
+    gap: 30px;
+    flex-direction: row;
+    margin-bottom: 82px;
+
+    &__card {
+      max-width: 350px;
+      padding: 40px;
+      flex-flow: column nowrap;
+      flex-grow: 1;
+    }
+
+    &__content {
+      width: unset;
+      margin-bottom: 56px;
+      // min-width: 50%;
+    }
+
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__price {
+      margin-bottom: 8px;
+    }
+
+    &__list {
+      margin-top: 0;
+      margin-bottom: 32px;
+    }
+
+    &__btn {
+      margin-left: auto;
+    }
+
+    &__card--alt {
+      & .pricing {
+        &__bg {
+          top: -379px;
+          left: calc((880px - 100%) / (-2));
+        }
+      }
+    }
+  }
 }
