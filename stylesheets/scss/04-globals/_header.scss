@@ -16,7 +16,7 @@
 
   // Tablet
   @include a.breakpoint(a.$md) {
-    margin-bottom: calc(104px + 72px);
+    margin-bottom: 104px;
     text-align: left;
 
     &__bg {
@@ -24,6 +24,17 @@
       top: -164px;
       left: unset;
       right: calc(-293px - 40px);
+    }
+
+    // Desktop
+    @include a.breakpoint(a.$lg) {
+      margin-bottom: 102px;
+
+      &__bg {
+        width: 1134px;
+        top: (-419px - 81px);
+        right: calc(-515px);
+      }
     }
   }
 }

@@ -337,7 +337,7 @@ a {
 }
 @media (min-width: 640px) {
   .header {
-    margin-bottom: 176px;
+    margin-bottom: 104px;
     text-align: left;
   }
   .header__bg {
@@ -345,6 +345,16 @@ a {
     top: -164px;
     left: unset;
     right: -333px;
+  }
+}
+@media (min-width: 640px) and (min-width: 1024px) {
+  .header {
+    margin-bottom: 102px;
+  }
+  .header__bg {
+    width: 1134px;
+    top: -500px;
+    right: -515px;
   }
 }
 
