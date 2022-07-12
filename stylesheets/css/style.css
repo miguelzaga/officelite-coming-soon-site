@@ -560,6 +560,16 @@ a {
   top: 156px;
   left: calc((1202px - 100%) / -2);
 }
+@media (min-width: 640px) {
+  .footer-home {
+    height: 986px;
+  }
+  .footer-home__bg {
+    width: 1454px;
+    top: 15px;
+    left: calc((1454px - 100%) / -2);
+  }
+}
 
 .br::after {
   content: "\a";
