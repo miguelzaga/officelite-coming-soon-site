@@ -25,17 +25,48 @@
     height: 92px;
     display: flex;
     flex-flow: column nowrap;
-    padding-top: 16px;
+    justify-content: center;
+    padding-top: 1px;
     border-radius: 4px;
   }
 
   &__number {
     font-weight: a.$font-bold;
     font-size: a.rem(32px);
+    line-height: 48px;
   }
 
   &__date {
     font-size: a.rem(12px);
     opacity: 0.5;
+    text-transform: lowercase;
+  }
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    &__title {
+      margin-bottom: 8px;
+    }
+
+    &__container {
+      gap: 16px;
+      margin-bottom: 48px;
+    }
+
+    &__card {
+      width: 100px;
+      height: 128px;
+      padding-top: 2px;
+      border-radius: 13px;
+    }
+
+    &__number {
+      font-size: a.rem(56px);
+      margin-bottom: 5px;
+    }
+
+    &__date {
+      font-size: a.rem(16px);
+    }
   }
 }

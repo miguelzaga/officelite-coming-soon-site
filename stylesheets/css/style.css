@@ -504,16 +504,41 @@ a {
   height: 92px;
   display: flex;
   flex-flow: column nowrap;
-  padding-top: 16px;
+  justify-content: center;
+  padding-top: 1px;
   border-radius: 4px;
 }
 .countdown__number {
   font-weight: 700;
   font-size: 2rem;
+  line-height: 48px;
 }
 .countdown__date {
   font-size: 0.75rem;
   opacity: 0.5;
+  text-transform: lowercase;
+}
+@media (min-width: 640px) {
+  .countdown__title {
+    margin-bottom: 8px;
+  }
+  .countdown__container {
+    gap: 16px;
+    margin-bottom: 48px;
+  }
+  .countdown__card {
+    width: 100px;
+    height: 128px;
+    padding-top: 2px;
+    border-radius: 13px;
+  }
+  .countdown__number {
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+  }
+  .countdown__date {
+    font-size: 1rem;
+  }
 }
 
 .footer-home {
