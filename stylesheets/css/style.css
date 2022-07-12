@@ -550,9 +550,10 @@ a {
 }
 
 .countdown {
-  max-width: 448px;
   text-align: center;
-  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 }
 .countdown__title {
   margin-bottom: 18px;
@@ -586,6 +587,10 @@ a {
   opacity: 0.5;
   text-transform: lowercase;
 }
+.countdown__btn {
+  margin-left: 0;
+  margin-right: 0;
+}
 @media (min-width: 640px) {
   .countdown__title {
     margin-bottom: 8px;
@@ -606,6 +611,16 @@ a {
   }
   .countdown__date {
     font-size: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .countdown {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .countdown__title {
+    text-align: left;
+    margin-bottom: 0;
   }
 }
 

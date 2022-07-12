@@ -1,9 +1,10 @@
 @use "./../01-abstracts/" as a;
 
 .countdown {
-  max-width: 448px;
   text-align: center;
-  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 
   &__title {
     margin-bottom: 18px;
@@ -42,6 +43,11 @@
     text-transform: lowercase;
   }
 
+  &__btn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   // Tablet
   @include a.breakpoint(a.$md) {
     &__title {
@@ -67,6 +73,17 @@
 
     &__date {
       font-size: a.rem(16px);
+    }
+  }
+
+  // Tablet
+  @include a.breakpoint(a.$lg) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    &__title {
+      text-align: left;
+      margin-bottom: 0;
     }
   }
 }
