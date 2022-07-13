@@ -703,6 +703,16 @@ a {
   margin: auto auto 64px;
 }
 
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+}
+.form__btn {
+  margin-top: 16px;
+  max-width: unset;
+}
+
 .br::after {
   content: "\a";
   white-space: pre;

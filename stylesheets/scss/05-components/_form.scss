@@ -1,0 +1,12 @@
+@use "./../01-abstracts/" as a;
+
+.form {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 24px;
+
+  &__btn {
+    margin-top: calc(40px - 24px);
+    max-width: unset;
+  }
+}
