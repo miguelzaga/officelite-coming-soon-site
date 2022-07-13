@@ -19,6 +19,11 @@
   }
 }
 
-.wrapper .wrapper--signup {
+.wrapper.wrapper--signup {
   padding-bottom: 87px;
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    padding-bottom: 126px;
+  }
 }

@@ -18,4 +18,16 @@
     top: -408px;
     left: calc((1202px - 100vw) / (-2));
   }
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    height: 380px;
+  }
+
+  &__img {
+    width: 1454px;
+    height: 1454px;
+    top: -537px;
+    left: calc((1454px - 100vw) / (-2));
+  }
 }

@@ -38,3 +38,11 @@
     }
   }
 }
+
+.header--signup .header {
+  @include a.breakpoint(a.$md) {
+    &__bg {
+      display: none;
+    }
+  }
+}

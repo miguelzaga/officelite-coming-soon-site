@@ -4,9 +4,17 @@
   display: flex;
   flex-flow: column nowrap;
   gap: 24px;
+  max-width: 445px;
+  margin-left: auto;
+  margin-right: auto;
 
   &__btn {
     margin-top: calc(40px - 24px);
     max-width: unset;
+  }
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    padding: 40px 42px 51px 43px;
   }
 }

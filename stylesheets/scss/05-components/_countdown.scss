@@ -77,7 +77,7 @@
     }
   }
 
-  // Tablet
+  // Desktop
   @include a.breakpoint(a.$lg) {
     flex-direction: row;
     justify-content: space-between;
@@ -94,26 +94,33 @@
 }
 
 // Signup Countdown
-.signup-countdown .countdown {
+.countdown--signup {
   margin-bottom: 64px;
 
-  &__title {
-    color: var(--font-main-1);
+  & .countdown {
+    &__title {
+      color: var(--font-main-1);
+    }
+
+    &__container {
+      margin-bottom: 0;
+    }
+
+    &__card {
+      background-color: var(--bg-countdown--alt);
+    }
+
+    &__number {
+      color: var(--font-highlight);
+    }
+
+    &__date {
+      color: var(--font-main-1);
+    }
   }
 
-  &__container {
-    margin-bottom: 0;
-  }
-
-  &__card {
-    background-color: var(--bg-countdown--alt);
-  }
-
-  &__number {
-    color: var(--font-highlight);
-  }
-
-  &__date {
-    color: var(--font-main-1);
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    margin-bottom: 104px;
   }
 }

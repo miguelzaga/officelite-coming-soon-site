@@ -11,4 +11,11 @@
     max-width: 573px;
     margin: auto auto 64px;
   }
+
+  // Tablet
+  @include a.breakpoint(a.$md) {
+    &__description {
+      margin-bottom: 40px;
+    }
+  }
 }
