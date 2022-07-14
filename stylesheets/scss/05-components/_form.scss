@@ -8,6 +8,10 @@
   margin-left: auto;
   margin-right: auto;
 
+  &__box {
+    max-height: 45px;
+  }
+
   &__btn {
     margin-top: calc(40px - 24px);
     max-width: unset;
@@ -16,5 +20,11 @@
   // Tablet
   @include a.breakpoint(a.$md) {
     padding: 40px 42px 51px 43px;
+  }
+
+  // Desktop
+  @include a.breakpoint(a.$x-lg) {
+    width: 100%;
+    margin: 0;
   }
 }

@@ -26,4 +26,15 @@
   @include a.breakpoint(a.$md) {
     padding-bottom: 126px;
   }
+
+  // Desktop
+  @include a.breakpoint(a.$x-lg) {
+    padding-bottom: 279px;
+    height: 1024px;
+
+    & .signup-container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
 }

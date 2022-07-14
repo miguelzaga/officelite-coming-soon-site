@@ -328,6 +328,7 @@ a {
   position: relative;
   text-align: center;
   margin-bottom: 80px;
+  max-height: 30px;
 }
 .header__bg {
   max-width: unset;
@@ -361,8 +362,13 @@ a {
 }
 
 @media (min-width: 640px) {
-  .header--signup .header__bg {
+  .header--signup.header .header__bg {
     display: none;
+  }
+}
+@media (min-width: 1440px) {
+  .header--signup.header {
+    margin-bottom: 154px;
   }
 }
 
@@ -391,6 +397,16 @@ a {
 @media (min-width: 640px) {
   .wrapper.wrapper--signup {
     padding-bottom: 126px;
+  }
+}
+@media (min-width: 1440px) {
+  .wrapper.wrapper--signup {
+    padding-bottom: 279px;
+    height: 1024px;
+  }
+  .wrapper.wrapper--signup .signup-container {
+    display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -670,6 +686,23 @@ a {
     margin-bottom: 104px;
   }
 }
+@media (min-width: 1024px) {
+  .countdown--signup {
+    flex-direction: column;
+  }
+  .countdown--signup .countdown__title {
+    text-align: center;
+  }
+}
+@media (min-width: 1440px) {
+  .countdown--signup {
+    margin-bottom: 0;
+    flex-direction: row;
+  }
+  .countdown--signup .countdown__title {
+    text-align: left;
+  }
+}
 
 .footer-home {
   background-color: var(--bg-main-2);
@@ -728,6 +761,12 @@ a {
     margin-bottom: 40px;
   }
 }
+@media (min-width: 1440px) {
+  .sign-content {
+    max-width: 540px;
+    text-align: left;
+  }
+}
 
 .form {
   display: flex;
@@ -736,6 +775,9 @@ a {
   max-width: 445px;
   margin-left: auto;
   margin-right: auto;
+}
+.form__box {
+  max-height: 45px;
 }
 .form__btn {
   margin-top: 16px;
@@ -746,6 +788,12 @@ a {
     padding: 40px 42px 51px 43px;
   }
 }
+@media (min-width: 1440px) {
+  .form {
+    width: 100%;
+    margin: 0;
+  }
+}
 
 .pattern-side {
   background-color: var(--bg-main-2);
@@ -753,7 +801,7 @@ a {
   height: 320px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: calc((100% - 100vw) / 2);
   z-index: -1;
   overflow: hidden;
 }
@@ -769,12 +817,26 @@ a {
   .pattern-side {
     height: 380px;
   }
+  .pattern-side__img {
+    width: 1454px;
+    height: 1454px;
+    top: -537px;
+    left: calc((1454px - 100vw) / -2);
+  }
 }
-.pattern-side__img {
-  width: 1454px;
-  height: 1454px;
-  top: -537px;
-  left: calc((1454px - 100vw) / -2);
+@media (min-width: 1440px) {
+  .pattern-side {
+    height: 100%;
+    width: 50vw;
+    top: 0;
+    left: calc(100% - 295px);
+  }
+  .pattern-side__img {
+    width: 2036px;
+    height: 2036px;
+    top: -781px;
+    left: -763px;
+  }
 }
 
 .br::after {

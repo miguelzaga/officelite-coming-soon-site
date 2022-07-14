@@ -123,4 +123,26 @@
   @include a.breakpoint(a.$md) {
     margin-bottom: 104px;
   }
+
+  // Desktop
+  @include a.breakpoint(a.$lg) {
+    flex-direction: column;
+
+    & .countdown {
+      &__title {
+        text-align: center;
+      }
+    }
+  }
+
+  @include a.breakpoint(a.$x-lg) {
+    margin-bottom: 0;
+    flex-direction: row;
+
+    & .countdown {
+      &__title {
+        text-align: left;
+      }
+    }
+  }
 }

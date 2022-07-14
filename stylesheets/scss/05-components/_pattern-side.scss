@@ -6,7 +6,7 @@
   height: 320px;
   position: absolute;
   bottom: 0;
-  left: 0;
+  left: calc((100% - 100vw) / (2));
   z-index: -1;
   overflow: hidden;
 
@@ -22,12 +22,27 @@
   // Tablet
   @include a.breakpoint(a.$md) {
     height: 380px;
+
+    &__img {
+      width: 1454px;
+      height: 1454px;
+      top: -537px;
+      left: calc((1454px - 100vw) / (-2));
+    }
   }
 
-  &__img {
-    width: 1454px;
-    height: 1454px;
-    top: -537px;
-    left: calc((1454px - 100vw) / (-2));
+  //  Desktop
+  @include a.breakpoint(a.$x-lg) {
+    height: 100%;
+    width: 50vw;
+    top: 0;
+    left: calc(100% - (40px + 255px));
+
+    &__img {
+      width: 2036px;
+      height: 2036px;
+      top: -781px;
+      left: -763px;
+    }
   }
 }

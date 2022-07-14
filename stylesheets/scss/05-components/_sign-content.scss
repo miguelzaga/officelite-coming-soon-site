@@ -18,4 +18,10 @@
       margin-bottom: 40px;
     }
   }
+
+  // Desktop
+  @include a.breakpoint(a.$x-lg) {
+    max-width: 540px;
+    text-align: left;
+  }
 }
