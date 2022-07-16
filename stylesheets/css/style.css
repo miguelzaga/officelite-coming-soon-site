@@ -308,6 +308,15 @@ a {
   border: none;
   border-bottom: var(--border) 1px solid;
 }
+.input--error,
+.select--error {
+  color: var(--font-error);
+  border-bottom-color: var(--font-error);
+  background-image: url("./../../../assets/sign-up/icon-cross.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-position: calc(100% - 21px) 3px;
+}
 
 .input::placeholder {
   color: var(--font-main-2);
