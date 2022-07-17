@@ -325,6 +325,11 @@ a {
 .select {
   font-weight: 700;
   color: var(--font-main-1);
+  appearance: none;
+  background-image: url("./../../../assets/sign-up/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-position: calc(100% - 25px) 11px;
 }
 
 .card {
