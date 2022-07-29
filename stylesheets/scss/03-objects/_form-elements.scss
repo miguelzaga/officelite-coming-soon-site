@@ -25,15 +25,28 @@
 }
 
 .select {
+  position: relative;
   font-weight: a.$font-bold;
   appearance: none;
-  background-image: url("./../../../assets/sign-up/icon-arrow-down.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-position: calc(100% - 25px) 11px;
 
   &:hover {
     cursor: pointer;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("./../../../assets/sign-up/icon-arrow-down.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 13px;
+    height: 8px;
+    right: 24px;
+    bottom: 27.5px;
+  }
+
+  &__active::after {
+    transform: rotate(180deg);
   }
 }
 
@@ -72,6 +85,12 @@
 
     &:hover {
       cursor: pointer;
+    }
+
+    &--selected {
+      background-image: url("./../../../assets/sign-up/icon-check.svg");
+      background-repeat: no-repeat;
+      background-position: center right;
     }
   }
 

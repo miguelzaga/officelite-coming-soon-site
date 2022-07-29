@@ -52,7 +52,7 @@ function showDropdown() {
   plans.forEach((plan) => {
     const { id, name, price } = plan;
     const option = document.createElement("div");
-    option.addEventListener("click", () => selectOption(name, price));
+    option.addEventListener("click", () => selectOption(option, name, price));
     option.setAttribute("id", id);
     option.classList.add("dropdown-structure__input");
 
@@ -79,11 +79,15 @@ function toggleDropdown() {
   input.classList.toggle("select__active");
 }
 
-function selectOption(name, price) {
+function selectOption(option, name, price) {
+  let htmlElements = form.getElementsByClassName("dropdown-structure__input");
+  for (let i = 0; i < htmlElements.length; i++) {
+    htmlElements[i].classList.remove("dropdown-structure__input--selected");
+  }
+  option.classList.add("dropdown-structure__input--selected");
   const n = document.querySelector(".dropdown-placeholder__name");
   const p = document.querySelector(".dropdown-placeholder__price");
   n.textContent = name;
   p.textContent = price;
-  // text.classList.add("select__selected");
   toggleDropdown();
 }

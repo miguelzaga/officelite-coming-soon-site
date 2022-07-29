@@ -323,15 +323,26 @@ a {
 }
 
 .select {
+  position: relative;
   font-weight: 700;
   appearance: none;
-  background-image: url("./../../../assets/sign-up/icon-arrow-down.svg");
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-position: calc(100% - 25px) 11px;
 }
 .select:hover {
   cursor: pointer;
+}
+.select::after {
+  content: "";
+  position: absolute;
+  background-image: url("./../../../assets/sign-up/icon-arrow-down.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 13px;
+  height: 8px;
+  right: 24px;
+  bottom: 27.5px;
+}
+.select__active::after {
+  transform: rotate(180deg);
 }
 
 .dropdown-placeholder {
@@ -367,6 +378,11 @@ a {
 }
 .dropdown-structure__input:hover {
   cursor: pointer;
+}
+.dropdown-structure__input--selected {
+  background-image: url("./../../../assets/sign-up/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
 }
 .dropdown-structure__name {
   color: var(--font-main-1);
