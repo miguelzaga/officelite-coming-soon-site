@@ -19,16 +19,20 @@ function createInput() {
   input.classList.add("input");
   input.addEventListener("click", toggleDropdown);
 
-  // Creates the input placeholder content
   const inputPlaceholder = document.createElement("div");
-  inputPlaceholder.classList = "select__placeholder";
+  inputPlaceholder.classList = "dropdown-placeholder";
 
-  const placeholder = document.createElement("p");
-  placeholder.textContent = "Basic Pack";
-  placeholder.classList.add("dropdown-placeholder");
+  const n = document.createElement("b");
+  n.classList.add("dropdown-placeholder__name");
+  n.textContent = "Basic Pack";
+
+  const t = document.createElement("p");
+  t.classList.add("dropdown-placeholder__price");
+  t.textContent = "Free";
 
   // Appends the placeholder and chevron (stored in assets.js)
-  inputPlaceholder.appendChild(placeholder);
+  inputPlaceholder.appendChild(n);
+  inputPlaceholder.appendChild(t);
   // inputPlaceholder.appendChild(dropdownIcon());
   input.appendChild(inputPlaceholder);
 
@@ -39,24 +43,26 @@ function showDropdown() {
   const structure = document.createElement("div");
   structure.classList.add("dropdown-structure", "hidden");
 
-  const users = [
-    { id: "basic", name: "Basic Pack", title: "Free" },
-    { id: "pro", name: "Pro Pack", title: "$9.99" },
-    { id: "ultimate", name: "Ultimate Pack", title: "$19.99" },
+  const plans = [
+    { id: "basic", name: "Basic Pack", price: "Free" },
+    { id: "pro", name: "Pro Pack", price: "$9.99" },
+    { id: "ultimate", name: "Ultimate Pack", price: "$19.99" },
   ];
 
-  users.forEach((user) => {
-    const { id, name, title } = user;
+  plans.forEach((plan) => {
+    const { id, name, price } = plan;
     const option = document.createElement("div");
-    option.addEventListener("click", () => selectOption(name));
+    option.addEventListener("click", () => selectOption(name, price));
     option.setAttribute("id", id);
-    option.classList.add("dropdown-structure-input");
+    option.classList.add("dropdown-structure__input");
 
-    const n = document.createElement("h5");
+    const n = document.createElement("b");
+    n.classList.add("dropdown-structure__name");
     n.textContent = name;
 
     const t = document.createElement("p");
-    t.textContent = `${title}`;
+    t.classList.add("dropdown-structure__price");
+    t.textContent = `${price}`;
 
     option.appendChild(n);
     option.appendChild(t);
@@ -73,9 +79,11 @@ function toggleDropdown() {
   input.classList.toggle("select__active");
 }
 
-function selectOption(name) {
-  const text = document.querySelector(".dropdown-placeholder");
-  text.textContent = name;
-  text.classList.add("select__selected");
+function selectOption(name, price) {
+  const n = document.querySelector(".dropdown-placeholder__name");
+  const p = document.querySelector(".dropdown-placeholder__price");
+  n.textContent = name;
+  p.textContent = price;
+  // text.classList.add("select__selected");
   toggleDropdown();
 }
