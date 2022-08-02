@@ -312,7 +312,7 @@ a {
 .select--error {
   color: var(--font-error);
   border-bottom-color: var(--font-error);
-  background-image: url("./../../../assets/sign-up/icon-cross.svg");
+  background-image: url("./../../assets/sign-up/icon-cross.svg");
   background-repeat: no-repeat;
   background-position: right top;
   background-position: calc(100% - 21px) 3px;
@@ -333,7 +333,7 @@ a {
 .select::after {
   content: "";
   position: absolute;
-  background-image: url("./../../../assets/sign-up/icon-arrow-down.svg");
+  background-image: url("./../../assets/sign-up/icon-arrow-down.svg");
   background-repeat: no-repeat;
   display: block;
   width: 13px;
