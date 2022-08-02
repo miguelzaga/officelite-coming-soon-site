@@ -7,12 +7,19 @@ let emailRegex =
 form.addEventListener("submit", function validate(event) {
   event.preventDefault();
 
-  if (nameInput.value.length == 0) {
+  var isNameEmpty = nameInput.value.length == 0;
+  var isEmailInvalid = !emailInput.value.match(emailRegex);
+
+  if (isNameEmpty) {
     nameInput.classList.add("input--error");
   }
 
-  if (!emailInput.value.match(emailRegex)) {
+  if (isEmailInvalid) {
     emailInput.classList.add("input--error");
+  }
+
+  if (!isNameEmpty && !isEmailInvalid) {
+    window.open("https://www.frontendmentor.io/", "_blank");
   }
 });
 

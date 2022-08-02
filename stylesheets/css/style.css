@@ -380,7 +380,7 @@ a {
   cursor: pointer;
 }
 .dropdown-structure__input--selected {
-  background-image: url("./../../../assets/sign-up/icon-check.svg");
+  background-image: url("./../../assets/sign-up/icon-check.svg");
   background-repeat: no-repeat;
   background-position: center right;
 }

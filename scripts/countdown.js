@@ -5,11 +5,8 @@ renderReleaseDate();
 setInterval(renderCountdown, 1000);
 
 function createReleaseDate() {
-  if (window.localStorage.getItem("releaseDate")) {
-    console.log("There is already a release Date");
-    console.log(window.localStorage.getItem("releaseDate"));
-  } else {
-    let date = new Date();
+  if (!window.localStorage.getItem("releaseDate")) {
+    var date = new Date();
     date.setTime(date.getTime() + 30 * 24 * 60 * 60 * 1000); // plus 30 days in miliseconds
     window.localStorage.setItem("releaseDate", date);
   }
